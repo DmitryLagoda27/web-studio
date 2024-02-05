@@ -1,0 +1,86 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 408px;
+  height: 100%;
+  max-height: 516px;
+  padding: 48px;
+  background-color: var(--CORNFLOWER);
+  border-radius: 4px;
+  overflow-y: auto;
+}
+.input-label {
+  position: relative;
+}
+.label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+
+.input-label {
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+:focus {
+  border-color: var(--color-brand);
+  outline: none;
+}
+
+::placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+/* @media screen and (min-width: $bp-tablet) {
+                padding: 128px;
+            } */
+
+.modal-closebtn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 24px;
+  border: none;
+}
+.closebtn {
+  fill: #2e2f42;
+}
+
+.modal-form-field {
+  margin-bottom: 32px;
+  width: 100%;
+}
+.modal-button {
+  margin: 0 auto 24px;
+}

@@ -1,0 +1,29 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--NAVY-BLUE);
+  background: var(--WHITE);
+  text-decoration: none;
+  font-style: normal;
+
+  //   @media screen and (min-width: $bp-tablet) {
+  //     font-size: 18px;
+  //     font-weight: 400;
+  //   }
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 72px 0;
+}
+
+a {
+  color: var(--NAVY-BLUE);
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
